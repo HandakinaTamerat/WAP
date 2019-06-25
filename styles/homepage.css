@@ -1,7 +1,7 @@
 @font-face{
   font-family:myfont;
-  src:url("../fonts/grotters.tff");
+  src:url("fonts/Grotters.tff");
 }
-p{
-color:red;
+h1{
+font-family:myfont;
 }
