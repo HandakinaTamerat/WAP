@@ -43,6 +43,6 @@ pre{
 .validator{
     float: right;
 }
-.deleted-text{
+#deleted-text{
     text-decoration-line:line-through;
 }
