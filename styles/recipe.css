@@ -4,7 +4,7 @@ body{
     font-family:Georgia, Garamond, serif;
     background-image:url('../images/silverware.jpg');
 }
-body :link{
+a{
     color:#A4A400;
 }
 h1,h2,h3,h4,h5,h6{
