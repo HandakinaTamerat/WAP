@@ -9,8 +9,13 @@ body :link{
 }
 h1,h2,h3,h4,h5,h6{
     color:#A4A400;
-    background-color:#F0F0F0;
     font-family:'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+    letter-spacing: .25em;
+    text-decoration-line:underline;
+}
+.headers{
+    background-color:#F0F0F0;
+
 }
 h1{
     font-size:22pt;
@@ -22,13 +27,14 @@ h2{
 }
 
 .non-decorated-list{
-    list-style-type: none;
+    list-style:none;
+    padding-left: 0;
 }
 .pie-bullet{
     list-style-image: url('../images/pie_icon.gif');
 }
 blockquote{
-    background-color:#ffffb3;
+    background-color:#FFFFA8;
 }
 pre{
     float: right;
