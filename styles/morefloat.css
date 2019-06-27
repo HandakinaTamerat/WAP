@@ -1,0 +1,90 @@
+#a, #b {
+	width: 100px;
+	height: 100px;
+	font: 30pt bold Helvetica, Arial, sans-serif;
+	line-height: 100px;
+	text-align: center;
+}
+
+#a {
+    background-color: lightblue;
+    float: left;
+}
+
+#b {
+    background-color: pink;
+    float: right;
+}
+
+#c {
+	background-color: lightgray;
+}
+
+/* ------------ 2 way---------------- */
+
+/* #a, #b {
+	width: 100px;
+	height: 100px;
+	font: 30pt bold Helvetica, Arial, sans-serif;
+	line-height: 100px;
+	text-align: center;
+}
+
+#a {
+    background-color: lightblue;
+    float: left;
+}
+
+#b {
+    background-color: pink;
+    float: right;
+    clear: left;
+}
+
+#c {
+	background-color: lightgray;
+} */
+
+/* --------------3 way-------------------- */
+
+/* #a, #b {
+	width: 100px;
+	height: 100px;
+	font: 30pt bold Helvetica, Arial, sans-serif;
+	line-height: 100px;
+	text-align: center;
+}
+
+#a {
+    background-color: lightblue;
+    float: left;
+}
+
+#b {
+    background-color: pink;
+    float: right;
+    clear: left;
+}
+
+#c {
+    background-color: lightgray;
+    clear: left;
+} */
+
+/* ----------------4 way */
+
+/* #a {
+    float: left;
+  }
+  #b {
+    float: right;
+    clear: left;
+  }
+  #c {
+    text-align: right;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  } */
+
+  
