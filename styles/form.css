@@ -1,0 +1,11 @@
+.container {
+    padding: 10px;
+}
+
+fieldset {
+    border-style: none;
+}
+
+legend {
+    text-align: center;
+}

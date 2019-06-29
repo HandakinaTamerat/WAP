@@ -1,4 +1,6 @@
 {
-    "editor.fontSize": 14
-    "editor.wordWrap": "on"
+    "editor.fontSize": 14,
+    "editor.wordWrap": "on",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 5000
 }
