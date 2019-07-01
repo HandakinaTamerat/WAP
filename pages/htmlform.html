@@ -15,23 +15,23 @@
                 <legend>Personal Information </legend>
                 <div class="firstname">
                     <label for="firstName">First Name</label>
-                    <input type="text" name="firstName" id="firstName">
+                    <input type="text" required name="firstName" id="firstName" pattern="\w{3,}">
                 </div>
                 <div class="lastName">
                     <label for="lastName">Last Name</label>
-                    <input type="text" name="lastName" id="lastName">
+                    <input type="text" name="lastName" id="lastName" required pattern="\w{3,}">
                 </div>
                 <div class="birthdate">
                     <label for="birthdate">Date of Birth</label>
-                    <input type="text" name="birthdate" id="birthdate">
+                    <input type="text" name="birthdate" id="birthdate" placeholder="mm-dd-yyyy" required>
                 </div>
                 <div class="motherName">
                     <label for="motherName">Mother’s Maiden Name</label>
-                    <input type="text" name="motherName" id="motherName">
+                    <input type="text" name="motherName" id="motherName" required pattern="\w{3,}">
                 </div>
                 <div class="sin">
                     <label for="sin">Social Insurance Number(Optional)</label>
-                    <input type="tel" name="sin" id="sin">
+                    <input type="tel" name="sin" id="sin" placeholder="(xxx) xx-xxxx" required pattern="^[">
                 </div>
                 <div class="learnCard">
                     <label for="learnCard"> How did you learn about this card? (Optional)</label>
@@ -40,6 +40,7 @@
                     </select>
                 </div>
             </fieldset>
+            <hr>
             <fieldset>
                 <legend>Contact Information</legend>
                 <div class="birthdate">
@@ -59,12 +60,14 @@
                     <input type="tel" name="sin" id="sin">
                 </div>
             </fieldset>
+            <hr>
             <fieldset>
                 <legend>Authorized User</legend>
                 <input type="checkbox" name="authUser" id="authUser">
                 <label for="authUser">
                         Yes! I would like to add an Authorized User (AU) to my account and receive a second card with their name on it.</label>
             </fieldset>
+            <hr>
             <fieldset>
                 <legend>Employment Information</legend>
                 <div class="learnCard">
@@ -74,6 +77,7 @@
                     </select>
                 </div>
             </fieldset>
+            <hr>
             <fieldset>
                 <legend>Financial Information</legend>
                 <div class="doYou">
@@ -116,6 +120,7 @@
                     <input type="radio" name="birthdate" id="birthdate"><label for="birthdate">NO</label>
                 </div>
             </fieldset>
+            <hr>
             <p>
                 By selecting “Review My Application”, you confirm that you have read, understood and agree to the above Important Disclosures.
             </p>

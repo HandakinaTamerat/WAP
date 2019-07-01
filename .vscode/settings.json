@@ -1,5 +1,6 @@
 {
     "editor.fontSize": 14,
     "editor.wordWrap": "on",
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 3000;
 }

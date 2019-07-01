@@ -9,3 +9,15 @@ fieldset {
 legend {
     text-align: center;
 }
+
+fieldset div {
+    float: left;
+    margin: 1%;
+    width: 48%;
+}
+
+fieldset div input[type="text"],
+fieldset div input[type="tel"],
+fieldset div select {
+    display: block;
+}
