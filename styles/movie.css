@@ -5,6 +5,7 @@ body{
     margin: 0;
     padding: 0;
 }
+
 .topHeader{
     background-image:url('../images/bannerbg.png');
     background-repeat: repeat-x;
@@ -15,12 +16,14 @@ body{
     margin-left: auto;
     margin-right:auto;
 }
+
 h1{
     text-align: center;
     font-size: 24pt;
     font-family: Tahoma, Verdana, or any sans-serif;
     text-shadow: 3px  3px  #999999;
 }
+
 .container{
     width: 800px;
     margin: 10px auto;
@@ -30,32 +33,35 @@ h1{
     background-color:#A2B964;
 
 }
-.sub-container{
-    width: 550px;
-}
+
 .insideHeader{
+    float: left;
     background-image:url('../images/rbg.png');
     height: 83px;
+    width:550px;
     font-size: 48pt;
     color:red;
     font-weight: bold;
 }
-.insideHeader img{
+
+.insideHeader img, .insideHeader p{
     float: left;
+    margin: 0;
 }
-.insideHeader p{
-    display: inline;
-}
+
+
 .comment-container{
-    display:grid;
-    grid-template-columns: auto auto;
-    grid-gap: 2%;
+    width: 550px;
     float: left;
     background-image: url('../images/background.png');
 }
+
 .comment-container > div{
-    margin: 10px;
+    margin: 1%;
+    width: 47%;
+    float: left;
 }
+
 .comment{
     background-color:#E8DC9B;
     border: 2px solid gray;
@@ -64,8 +70,29 @@ h1{
     text-overflow: ellipsis;
     font-weight:bold;
     font-size:8pt;
+    box-sizing: border-box;
 }
+
 .general-overview{
+    float: left;
     position: relative;
-    bottom: 100px;
+    bottom: 90px;
 }
+
+dl{
+    float: left;
+    width: 250px;
+    position: relative;
+    bottom: 90px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+dt{
+    font-weight: bold;
+}
+.end-text{
+    text-align: center;
+    clear: both;
+}
+/*
+*/
