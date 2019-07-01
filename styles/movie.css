@@ -40,6 +40,12 @@ h1{
     color:red;
     font-weight: bold;
 }
+.insideHeader img{
+    float: left;
+}
+.insideHeader p{
+    display: inline;
+}
 .comment-container{
     display:grid;
     grid-template-columns: auto auto;
