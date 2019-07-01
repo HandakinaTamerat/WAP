@@ -83,16 +83,35 @@ dl{
     float: left;
     width: 250px;
     position: relative;
-    bottom: 90px;
+    bottom: 110px;
     padding-left: 20px;
     box-sizing: border-box;
 }
 dt{
+    margin-top: 10pt;
     font-weight: bold;
 }
 .end-text{
     text-align: center;
     clear: both;
 }
-/*
-*/
+.person{
+    padding: 5px;
+}
+.person img, .person p{
+    display: inline-block;
+    vertical-align: middle;
+}
+em{
+    display: block;
+}
+h4{
+    background-color:#A2B964;
+    padding: 8px;
+}
+
+.validation{
+    float: right;
+    margin: 10px;
+    opacity: 0.5;
+}
