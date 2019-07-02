@@ -23,7 +23,8 @@
                 </div>
                 <div class="birthdate">
                     <label for="birthdate">Date of Birth</label>
-                    <input type="text" name="birthdate" id="birthdate" placeholder="mm-dd-yyyy" required>
+                    <input type="text" name="birthdate" id="birthdate" pattern="(0?[1-9]|[12][0-9]|3[01])/(0?[1-9]|1[012])/\d{4}"
+                     placeholder="mm/dd/yyyy" required>
                 </div>
                 <div class="motherName">
                     <label for="motherName">Mother’s Maiden Name</label>
@@ -31,33 +32,36 @@
                 </div>
                 <div class="sin">
                     <label for="sin">Social Insurance Number(Optional)</label>
-                    <input type="tel" name="sin" id="sin" placeholder="(xxx) xx-xxxx" required pattern="^[">
+                    <input type="tel" name="sin" id="sin" placeholder="XXX-XXX-XXXX" required 
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                 </div>
                 <div class="learnCard">
                     <label for="learnCard"> How did you learn about this card? (Optional)</label>
-                    <select name="learnCard" id="learnCard">
-                        <option value="none">Select Source</option>
+                    <select name="learnCard" id="learnCard" >
+                        <option >Select Source</option>
+                        <option value="val">val</option>
                     </select>
                 </div>
             </fieldset>
             <hr>
             <fieldset>
                 <legend>Contact Information</legend>
-                <div class="birthdate">
-                    <label for="birthdate">Home Address (No P.O. Boxes)</label>
-                    <input type="text" name="birthdate" id="birthdate">
+                <div class="address">
+                    <label for="address">Home Address (No P.O. Boxes)</label>
+                    <input type="text" name="address" id="address" required pattern="^\w">
                 </div>
-                <div class="birthdate">
-                    <label for="birthdate">Suite/Apt. # (if Applicable)</label>
-                    <input type="text" name="birthdate" id="birthdate">
+                <div class="suite">
+                    <label for="suite">Suite/Apt. # (if Applicable)</label>
+                    <input type="text" name="suite" id="suite"  required pattern="^\w">
                 </div>
-                <div class="motherName">
-                    <label for="motherName">Email Address</label>
-                    <input type="text" name="motherName" id="motherName">
+                <div class="email">
+                    <label for="email">Email Address</label>
+                    <input type="text" name="email" id="email"  required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                 </div>
                 <div class="sin">
                     <label for="sin">Primary Phone Number</label>
-                    <input type="tel" name="sin" id="sin">
+                    <input type="tel" name="sin" id="sin" placeholder="XXX-XXX-XXXX" required 
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                 </div>
             </fieldset>
             <hr>
@@ -65,7 +69,8 @@
                 <legend>Authorized User</legend>
                 <input type="checkbox" name="authUser" id="authUser">
                 <label for="authUser">
-                        Yes! I would like to add an Authorized User (AU) to my account and receive a second card with their name on it.</label>
+                    Yes! I would like to add an Authorized User (AU) to my account and receive a second card with their name on it.
+                </label>
             </fieldset>
             <hr>
             <fieldset>
