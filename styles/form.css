@@ -1,5 +1,16 @@
+body {
+    background-color: #eee;
+}
+
 .container {
+    background-color: white;
     padding: 10px;
+    width: 800px;
+    margin: auto;
+}
+
+hr {
+    color: #eee;
 }
 
 fieldset {
@@ -8,6 +19,10 @@ fieldset {
 
 legend {
     text-align: center;
+    font-size: 1.4em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(8, 5, 51);
+    margin-bottom: 20px;
 }
 
 fieldset div {
@@ -16,8 +31,18 @@ fieldset div {
     width: 48%;
 }
 
+fieldset div:nth-child(even) {
+    clear: left;
+}
+
 fieldset div input[type="text"],
-fieldset div input[type="tel"],
+fieldset div input[type="number"],
+fieldset div input[type="date"],
 fieldset div select {
     display: block;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 8px;
+    margin: 5px;
+    width: 80%;
 }
