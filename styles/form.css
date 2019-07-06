@@ -7,10 +7,16 @@ body {
     padding: 10px;
     width: 800px;
     margin: auto;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+    color:rgb(4, 48, 21);
 }
 
 hr {
     color: #eee;
+}
+#endAgreement{
+    text-align:center;
 }
 
 fieldset {
@@ -20,9 +26,9 @@ fieldset {
 legend {
     text-align: center;
     font-size: 1.4em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(8, 5, 51);
-    margin-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 fieldset div {
@@ -38,11 +44,29 @@ fieldset div:nth-child(even) {
 fieldset div input[type="text"],
 fieldset div input[type="number"],
 fieldset div input[type="date"],
+fieldset div input[type="tel"],
+fieldset div input[type="submit"],
 fieldset div select {
     display: block;
     border-radius: 5px;
     border-width: 1px;
+    border-color:rgb(68, 88, 173);
     padding: 8px;
     margin: 5px;
     width: 80%;
+}
+
+div#submit{
+    width: 350px;
+    margin:auto;
+}
+input[type="submit"]{
+    background-color:rgb(24, 129, 85);
+    color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color:rgb(205, 207, 214);
+    padding: 12px;
+    font-size: 14pt;
+    width: 350px;
 }

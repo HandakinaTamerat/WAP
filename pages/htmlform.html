@@ -80,11 +80,10 @@
             <hr />
             <fieldset>
                 <legend>Authorized User</legend>
-                <input type="checkbox" name="authUser" id="authUser" />
+                <input type="checkbox" name="authUser" id="authUser" required />
                 <label for="authUser">
-            Yes! I would like to add an Authorized User (AU) to my account and
-            receive a second card with their name on it.
-          </label>
+                  Yes! I would like to add an Authorized User (AU) to my account and receive a second card with their name on it.
+                </label>
             </fieldset>
             <hr />
             <fieldset>
@@ -92,72 +91,89 @@
                 <div class="learnCard">
                     <label for="learnCard"> Employment Status</label>
                     <select name="learnCard" id="learnCard">
-              <option value="none">Select Status</option>
-            </select>
+                        <option value="" disabled selected>Select status</option>
+                        <option value="employed">Employed</option>
+                        <option value="selfEmployed">Self-Employed</option>
+                        <option value="retired">Retired</option>
+                        <option value="student">Student</option>
+                        <option value="unemployed">Unemployed</option>
+                    </select>
                 </div>
             </fieldset>
             <hr />
             <fieldset>
                 <legend>Financial Information</legend>
-                <div class="doYou">
-                    <p>Do you: (Optional)</p>
-                    <input type="radio" name="own" id="own" />
+                <section>
+                   <div class="doYou">
+                      <p>Do you: (Optional)</p>
+                    <input type="radio" name="doYou" id="own" />
                     <label for="own">Own</label>
-                    <input type="radio" name="rent" id="rent" />
+                    <input type="radio" name="doYou" id="rent" />
                     <label for="rent">Rent</label>
-                    <input type="radio" name="lvParent" id="lvParent" />
+                    <input type="radio" name="doYou" id="lvParent" />
                     <label for="lvParent">Live with parents</label>
-                    <input type="radio" name="other" id="other" />
+                    <input type="radio" name="doYou" id="other" />
                     <label for="other">Other</label>
                 </div>
-                <div class="birthdate">
-                    <label for="birthdate">Your Annual Income (Before Taxes)</label>
-                    <input type="text" name="birthdate" id="birthdate" />
+              </section>
+               
+                <div class="income">
+                    <label for="income">Your Annual Income (Before Taxes)</label>
+                    <input type="number" name="income" id="income" />
                 </div>
-                <div class="motherName">
-                    <label for="motherName">Other Household Income (Before Taxes)</label
+                <div class="hIncome">
+                    <label for="hIncome">Other Household Income (Before Taxes)</label
             >
-            <input type="text" name="motherName" id="motherName" />
+            <input type="number" name="hIncome" id="hIncome" />
           </div>
-          <div class="birthdate">
+          <div class="mortgage">
             <p>
               Do you have a mortgage? (Optional)
             </p>
-            <input type="radio" name="birthdate" id="birthdate" /><label
-              for="birthdate"
+            <input type="radio" name="mortgage" id="mortgageYes" /><label
+              for="mortgageYes"
               >Yes</label
             >
-            <input type="radio" name="birthdate" id="birthdate" /><label
-              for="birthdate"
+            <input type="radio" name="mortgage" id="mortgageNo" /><label
+              for="mortgageNo"
               >NO</label
             >
           </div>
-          <div class="motherName">
-            <label for="motherName">Monthly Rent/Mortgage (Optional)</label>
-                    <input type="text" name="motherName" id="motherName" />
+          <div class="mMortgage">
+            <label for="mMortgage">Monthly Rent/Mortgage (Optional)</label>
+                    <input type="number" name="mMortgage" id="mMortgage" />
                 </div>
-                <div class="birthdate">
-                    <label for="birthdate">Do you have any bank accounts?</label>
-                    <select name="sel" id=""> </select>
+                <div class="haveAccount">
+                    <label for="haveAccount">Do you have any bank accounts?</label>
+                    <select name="haveAccount" id="haveAccount">
+                      <option value="" disabled="" selected>Select a type</option>
+                      <option value="chequing-and-savings">Chequing and Savings</option>
+                      <option value="chequing-only">Chequing Only</option>
+                      <option value="savings-only">Savings Only</option>
+                      <option value="neither">Neither</option>
+                    </select>
                 </div>
-                <div class="motherName">
+                <div class="cash">
                     <p>
                         Would you like to use your card for cash advances? (Optional)
                     </p>
-                    <input type="radio" name="birthdate" id="birthdate" /><label for="birthdate">Yes</label
+                    <input type="radio" name="cash" id="cashYes" /><label for="cashYes">Yes</label
             >
-            <input type="radio" name="birthdate" id="birthdate" /><label
-              for="birthdate"
+            <input type="radio" name="cash" id="cashNo" /><label
+              for="cashNo"
               >NO</label
             >
           </div>
         </fieldset>
         <hr />
-        <p>
+        <p id=endAgreement>
           By selecting “Review My Application”, you confirm that you have read,
           understood and agree to the above Important Disclosures.
         </p>
-        <input type="submit" value="Review My Application" />
+        <div id="submit">
+           <input type="submit" value="Review My Application" />
+        </div>
+       
       </form>
     </div>
     <script></script>
